@@ -15,7 +15,7 @@ Webclient::Webclient(QWidget *parent) :
 void Webclient::on_goButton_clicked()
 {
     unsigned short port = 80;
-
+    m_address = nullptr;
     QString str = address->text();
     m_address += str;
 
